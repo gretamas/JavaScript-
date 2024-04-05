@@ -1,167 +1,143 @@
-//Exercise 1
+//Exercise1
 /*
-let myName = prompt("Please enter your name:");
+let userName = prompt("Please enter a username:");
 
-console.log("Hello, " + myName);
+const greetingMessage = `Hello, ${userName}! Welcome to our website.`;
 
-document.body.innerHTML = "<h2>Hello, " + myName + "</h2>"
+console.log(greetingMessage);
 */
 
-
-//Exercise 2
+//Exercise2
 /*
-let birthYear = prompt("Please enter yor year of birth:");
+const child1Name = prompt("Please enter a first child name");
 
-const currentYear= 2024;
+const child2Name = prompt("Please enter a second child name");
 
-const age = currentYear - birthYear;
+const child1Age = prompt("Please enter a first child age");
 
-console.log(age);
+const child2Age = prompt("Please enter a second child age");
 
-document.body.innerHTML = "<h2>Your age is " + age + " years old</h2>"
+console.log(child1Age > child2Age);
+
+console.log(child1Name == "Tim");
 */
 
-//Exercise 3
+//Exercise3
 /*
-let sideLength = prompt("Please enter a square side length:");
+let color = prompt("Please enter a color");
 
-const squarePerimeter= sideLength * 4;
+const flagColor1 = "red";
 
-console.log(squarePerimeter);
+const flagColor2 = "green";
 
-document.body.innerHTML = "<h2>Square perimeter is: " + squarePerimeter + " cm </h2>"
+const flagColor3 = "black";
+
+const flagColor4 = "blue";
+
+const flagColor5 = "yellow";
+
+console.log(color == flagColor1 || color == flagColor2 ||color == flagColor3 || color == flagColor4 || color == flagColor5);
 */
 
-//Exercise 4
+//Exercise4
 /*
-let circleRadius = prompt("Please enter a circle radius:");
+let number = prompt("Please enter a number");
 
-const pi = 3.14;
-
-const area = pi * circleRadius * circleRadius;
-
-console.log(area);
-
-document.body.innerHTML = "<h2>Circle area: " + area + "</h2>"
+console.log(number%2 == 1);
 */
 
-//Exercise 5
+//Exercise5
 /*
-let distance = prompt("Please enter a distance between two cities (km):");
+let number1 = prompt("Please enter a first number");
 
-let time = prompt("Please enter a time within you want to cover a distance (h)");
+let number2 = prompt("Please enter a second number");
 
-const speed = distance/time;
+const result = Math.floor(number1/number2);
 
-console.log(speed);
-
-document.body.innerHTML = "<h2>Speed needed to be on time: " + speed + " km/h </h2>"
+console.log(result);
 */
 
-//Exercise 6
+//Exercise6
 /*
-const userName = prompt("Please enter your name:");
+const birthYear = prompt("Please enter your birth year");
 
-const age = prompt("Please enter your age:");
+const age = 2024 - birthYear;
 
-const birthPlace = prompt("Please enter your country of birth:");
-
-console.log("%c userName", "color:green;");
-
-console.log("%c age", "color:red;");
-
-console.log("%c birthPlace", "color:blue;");
+console.log(age >= 18);
 */
 
-//Exercise 7
+//Exercise7
 /*
-const userName = prompt("Please enter your name:");
+let emptyValue;
 
-const age = prompt("Please enter your age:");
-
-const birthPlace = prompt("Please enter your country of birth:");
-
-const city = prompt("Please enter your city of birth:");
-
-let currentAddress = prompt("Please enter your current address:");
-
-let postalCode = prompt("Please enter your postal code:");
-
-let favouriteColor = prompt("Please enter your favourite color:");
-
-let pet = prompt("do you have a pet (Yes/No):");
-
-const gender = prompt("Please enter your gender:");
-
-let car = prompt("Please enter your car model:");
-
-alert(userName + ' ' + age  + ' ' +  birthPlace + ' ' +  city + ' ' +  currentAddress + ' ' +  postalCode + ' ' +  favouriteColor + ' ' +  pet + ' ' +  gender + ' ' +  car );
+console.log(typeof emptyValue);
 */
 
-
-//Exercise 8
-
+//Exercise8
 /*
+let number = prompt("Please enter a number");
 
-const birthYear= 2000;
+console.log(typeof number);
 
-countAge= ((2025 - birthYear) + ' ' + (2029 - birthYear) + ' ' + (2050 - birthYear));
-
-console.log(countAge);
-
+console.log(number >= 10 && number <= 50);
 */
 
 //Challenges
-//Exercise 1
+//Exercise1
 /*
-let amountInUSD = prompt("Please enter the amount in USD:");
+let userInput = prompt("Please enter a hree-digit number");
 
-const exchangeToEUR = amountInUSD * 0.93;
-
-console.log(exchangeToEUR);
-
-document.body.innerHTML = "<h2>Amount in EUR is: " + exchangeToEUR + "</h2>"
+console.log((userInput[0] === userInput[1] || userInput[0] === userInput[2] || userInput[1] === userInput[2]));
 */
 
-//Exercise 2
+//Exercise2
 /*
-let memory = prompt("Please enter a flash drive memory in GB:");
+let userInput = prompt("Please enter a five-digit number:");
 
-const fileSize = 280;
-
-const availableStorage = (memory * 1000)/ fileSize;
-
-console.log(availableStorage);
-
-document.body.innerHTML = "<h2>You can store: " + availableStorage + " files</h2>"
+console.log(userInput[0] === userInput[4] && userInput[1] === userInput[3]);
 */
 
-//Exercise 3
+//Exercise3
 /*
-let money = prompt("Please enter an amount of money (EUR):");
+// Currency conversion rates (1 USD to other currencies)
+const conversionRates = {
+    "EUR": 0.83,
+    "SEK": 8.77,
+    "AUD": 1.29,
+};
 
-let price = prompt("Please enter a chocolate price (EUR):");
+let inputUSD = parseFloat(prompt("Please enter an amount in USD"));
 
-const chocolatesNumber = money/price;
+let currency = prompt("Please enter a desired currency: EUR/SEK/AUD");
 
-let chocolatesNumberRounded = Math.floor(chocolatesNumber);
+function convertCurrency(inputUSD, currency) {
+    if (conversionRates[currency]) {
+        return inputUSD * conversionRates[currency];
+    } else {
+        return "Currency not supported.";
+    }
+}
 
-let change = money - (chocolatesNumberRounded * price);
+let result = convertCurrency(inputUSD, currency);
 
-console.log(chocolatesNumberRounded);
-
-console.log(change);
-
-document.body.innerHTML = "<h2>You can buy: " + chocolatesNumberRounded + " chocolates</h2>"
-
-document.body.innerHTML = "<h2>Your change is: " + change + " Eur</h2>"
+console.log(result);
 */
 
-//Exercise 4
+//Exercise4
 /*
-let deposit = prompt("Please enter a sum of bank deposit for 2 months:");
+let length = prompt("Please enter a length of a circumference");
 
-const interest = deposit * 0.05;
+let perimeter = prompt("Please enter a a perimeter of a square");
 
-console.log(interest);
+const diameter = length / 3.14; // it is equal to square side
+
+const squareSide = perimeter / 4;
+
+if (squareSide >= diameter) {
+    console.log("The circumference can fit inside the square");
+} else {
+    console.log("The circumference cannot fit inside the square");
+}
 */
+
+
