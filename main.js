@@ -140,4 +140,26 @@ if (squareSide >= diameter) {
 }
 */
 
+//Exercise5
+
+/*Request a date (dd:mm:yy) and put out the one that goes after it. Pay attention to the start of a new month, new year, and also leap years.
+
+
+//Exercise6
+
+/*
+
+let email = prompt("Please enter your email");
+
+console.log(email.length > 20 && email.includes('@'));
+*/
+
+//Exercise7
+
+let age = parseInt(prompt("Please enter your age:"));
+
+let message = age > 18 ? "You are over 18" : "You are underaged";
+
+console.log(message);
+
 
