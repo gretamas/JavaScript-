@@ -42,7 +42,7 @@ for(let i = 1; i<=number; i++) {
 }
 */
 
-//Exercise3
+//Exercise4
 /*
 let number = parseInt(prompt("Please enter a number"));
 
@@ -56,7 +56,7 @@ while(counter<= convertString.length) {
 }
 */
 
-//Exercise3
+//Exercise5
 /*
 let positive = 0;
 let negative = 0;
@@ -89,7 +89,7 @@ console.log("Odd:", odd);
 console.log("Even:", even);
 */
 
-//Exercise3
+//Exercise6
 /*
 let fruit = prompt("Please enter your favourite fruit:");
 
@@ -103,7 +103,7 @@ if (fruit === "Peach" || fruit === "Banana" || fruit === "Apple") {
 
 */
 
-//Exercise4
+//Exercise7
 /*
 let number = parseInt(prompt("Please enter a number"));
 
@@ -218,6 +218,7 @@ for (let i = 2; i <= 9; i++) {
 */
 
 //Exercise4
+
 
 
 
