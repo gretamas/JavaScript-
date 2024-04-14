@@ -191,3 +191,10 @@ console.log("Classrooms sorted by number of seats:");
 classrooms.forEach((classroom, index) => {
     console.log(`${index + 1}. ${classroom.name}, Seats: ${classroom.seats}`);
 });
+
+const sortedClassrooms = classrooms.sort((classroom1, classroom2) => {
+    return classroom1.name.localeCompare(classroom2.name);
+});
+
+console.log("Classrooms sorted in alphabetical order:");
+console.log(sortedClassrooms);
