@@ -10,10 +10,12 @@ const groceriesList = [
     { product: "eggs", amount: 10, ifBought: "yes"},
 ];
 
+
 const notBoughtItems = groceriesList.filter(item => item.ifBought === "no");
+
 const boughtItems = groceriesList.filter(item => item.ifBought === "yes");
 
-const newList = notBoughtItems.concat(boughtItems);
+newList= notBoughtItems.concat(boughtItems);
 
 console.log(newList);
 */
@@ -58,6 +60,12 @@ function totalPrice() {
 }
  
 console.log("Total sum of the purchse is: " + totalPrice());
+
+//Another way
+
+const sumOfPurchase = receipt.reduce((total, item) =>total + (item.amount * item.pricePerItem), 0)
+
+console.log("Total sum of the purchse is: " + sumOfPurchase);
 
 function mostExpensive(a,b){
     return receipt.sort((a,b)  => b.pricePerItem - a.pricePerItem)[0];
@@ -106,7 +114,7 @@ generatetext(text);
 */
 
 //Exercise5
-
+/*
 const classrooms = [
     { name: "classroom1", seats: 10, faculty: "maths"},
     { name: "classroom2", seats: 13, faculty: "english"},
@@ -198,3 +206,12 @@ const sortedClassrooms = classrooms.sort((classroom1, classroom2) => {
 
 console.log("Classrooms sorted in alphabetical order:");
 console.log(sortedClassrooms);
+
+*/
+
+
+
+
+
+
+

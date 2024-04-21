@@ -124,15 +124,14 @@ console.log("Time after adding 40 minutes:", time.displayTime());
 */
 
 //Exercise4
-/*
+
 const dogs = [
     { name: "John", id: 1, age: 2, address: "1 First St" },
     { name: "Ivan", id: 2, age: 6, address: "2 Second St" },
     { name: "Teddy", id: 3, age: 7, address: "3 Third St" },
     { name: "Rocco", id: 4, age: 4, address: "4 Fourth St" },
-    { name: "Sparky", id: 5, age: 9, address: "6 Fifth St" }
+    { name: "Sparky", id: 5, age: 9, address: "6 Fifth St" },
 ];
-
 
 dogs.sort(function(a, b) { 
     return b.age - a.age 
@@ -146,7 +145,6 @@ console.log("The youngest dog is: " + dogs[4].name);
 for (let key in dogs) {
     console.log(dogs[key]);
 }
-*/
 
 //Exercise6
 
