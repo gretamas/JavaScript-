@@ -24,12 +24,16 @@ if (ageInput < 18){
 */
 
 //Exercise2
-document.addEventListener("DOMContentLoaded", function() {
+
+//document.addEventListener("DOMContentLoaded", function() {
 const getBlock = document.querySelector(".container");
 
-console.log(getBlock);//Shows null without eventListener
+console.log(getBlock);
 
 const namesList = document.createElement("ul");
+
+getBlock.append(namesList);
+
 namesList.className = "list";
 namesList.insertAdjacentHTML(
     "afterbegin",
@@ -67,7 +71,7 @@ function findMiddleItem () {
 const middleItem = findMiddleItem();
 
 middleItem.insertAdjacentHTML(
-   "afterbegin",
+   "afterend",
    `
    <li class="item">Smith</li>
    <li class="item">Jeff</li>
@@ -80,15 +84,23 @@ getMel.remove();
 function oddNames(){
    const items = namesList.querySelectorAll(".item");
    console.log(items);
-   for(let i = 1; i < items.length; i++){
-       if (i % 2 !== 0){
+   for(let i = 0; i < items.length; i++){
+       if ((i + 1) % 2 !== 0){
            items[i].style.backgroundColor = "pink";
        }
    }  
 }
 
 oddNames();
-});
+//});
+
+
+
+
+
+
+
+
 
 
 
