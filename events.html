@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/5a481d3278.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="events.js" defer></script>
+    <style>
+      .song-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+        padding: 10px;
+        border: 1px solid greenyellow;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .song-details:last-child {
+        display: flex;
+        align-items: center;
+      }
+
+      .bold {
+        font-weight: 700;
+      }
+
+      .input-text {
+        display: flex;
+        column-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="song-generator">
+      <h2 class="subtitle">Add a song</h2>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" class="name-input" />
+        <label for="artist">Artist</label>
+        <input type="text" class="artist-input" />
+        <label for="runtime">Runtime</label>
+        <input type="text" class="runtime-input" />
+        <button type="submit" class="btn">Add Song</button>
+      </form>
+      <h1>Song List</h1>
+      <div class="list-item"></div>
+    </div>
+  </body>
+</html>

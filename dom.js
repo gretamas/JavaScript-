@@ -24,7 +24,7 @@ if (ageInput < 18){
 */
 
 //Exercise2
-
+/*
 //document.addEventListener("DOMContentLoaded", function() {
 const getBlock = document.querySelector(".container");
 
@@ -94,7 +94,7 @@ function oddNames(){
 oddNames();
 //});
 
-
+*/
 
 
 
