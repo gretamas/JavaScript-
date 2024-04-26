@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortable Table</title>
+    <script src="challenge2.js" defer></script>
+    <style>
+      .table {
+        border: 2px solid black;
+        background-color: lightblue;
+        width: 500px;
+      }
+
+      td {
+        border: 1px solid black;
+      }
+
+      .table-body {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table">
+      <tr>
+        <th class="headers" data-column="name" data-order="desc">Name</th>
+        <th class="headers" data-column="age" data-order="desc">Age</th>
+        <th class="headers" data-column="score" data-order="desc">Score</th>
+      </tr>
+      <tbody class="table-body"></tbody>
+    </table>
+  </body>
+</html>
